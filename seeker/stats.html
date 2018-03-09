@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stats</title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Home</title>
+    <link rel="icon" type="image.ico" href="../img/favicon.ico">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="../css/style.css" rel="stylesheet">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+    <script type="text/javascript">
+        FusionCharts.ready(function(){
+            var fusioncharts = new FusionCharts({
+                    type: 'mssplinearea',
+                    renderAt: 'chart-container',
+                    width: '100%',
+                    height: '550',
+                    dataFormat: 'json',
+                    dataSource: {
+                        "chart": {
+                            "caption": "Profile wievs and clicks",
+                            "xAxisName": "Day",
+                            "yAxisName": "Wievs & clicks",
+                            "captionFontSize": "14",
+                            "subcaptionFontSize": "14",
+                            "baseFontColor": "#333333",
+                            "baseFont": "Helvetica Neue,Arial",
+                            "subcaptionFontBold": "0",
+                            "paletteColors": "#6baa01,#008ee4",
+                            "usePlotGradientColor": "0",
+                            "bgColor": "#ffffff",
+                            "showBorder": "0",
+                            "showPlotBorder": "0",
+                            "showValues": "0",
+                            "showShadow": "0",
+                            "showAlternateHGridColor": "0",
+                            "showCanvasBorder": "0",
+                            "showXAxisLine": "1",
+                            "xAxisLineThickness": "1",
+                            "xAxisLineColor": "#999999",
+                            "canvasBgColor": "#ffffff",
+                            "divlineAlpha": "100",
+                            "divlineColor": "#999999",
+                            "divlineThickness": "1",
+                            "divLineIsDashed": "1",
+                            "divLineDashLen": "1",
+                            "divLineGapLen": "1",
+                            "legendBorderAlpha": "0",
+                            "legendShadow": "0",
+                            "toolTipColor": "#ffffff",
+                            "toolTipBorderThickness": "0",
+                            "toolTipBgColor": "#000000",
+                            "toolTipBgAlpha": "80",
+                            "toolTipBorderRadius": "2",
+                            "toolTipPadding": "5"
+                        },
+
+                        "categories": [{
+                            "category": [{
+                                "label": "Mon"
+                            }, {
+                                "label": "Tue"
+                            }, {
+                                "label": "Wed"
+                            }, {
+                                // "vline": "true",
+                                // "lineposition": "0",
+                                // "color": "#6baa01",
+                                // "labelHAlign": "right",
+                                // "labelPosition": "0",
+                                // "label": "National holiday"
+                                // }, {
+                                "label": "Thu"
+                            }, {
+                                "label": "Fri"
+                            }, {
+                                "label": "Sat"
+                            }, {
+                                "label": "Sun"
+                            }]
+                        }],
+                        "dataset": [{
+                            "seriesname": "Wievs",
+                            "data": [{
+                                "value": "45"
+                            }, {
+                                "value": "48"
+                            }, {
+                                "value": "28"
+                            }, {
+                                "value": "37"
+                            }, {
+                                "value": "25"
+                            }, {
+                                "value": "27"
+                            }, {
+                                "value": "40"
+                            }]
+                        }, {
+                            "seriesname": "Clicks",
+                            "data": [{
+                                "value": "40"
+                            }, {
+                                "value": "38"
+                            }, {
+                                "value": "27"
+                            }, {
+                                "value": "20"
+                            }, {
+                                "value": "20"
+                            }, {
+                                "value": "26"
+                            }, {
+                                "value": "35"
+                            }]
+                        }]
+                    }
+                }
+            );
+            fusioncharts.render();
+        });
+    </script>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <nav id="sidebar">
+        <div id="dismiss">
+            <i class="glyphicon glyphicon-arrow-left"></i>
+        </div>
+
+        <div class="sidebar-header">
+            <h3>Productive CV</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li class="">
+                <a href="home.html">Home</a>
+            </li>
+
+            <li>
+                <a href="employers.html">Companys</a>
+            </li>
+
+            <li class="active">
+                <a href="stats.html">Stats</a>
+            </li>
+
+            <li>
+                <a href="edit.html">Edit profile</a>
+            </li>
+
+            <li>
+                <a href="payment.html">Payment</a>
+            </li>
+
+            <li>
+                <a href="settings.html">Settings</a>
+            </li>
+            <!--<li class="active">-->
+            <!--<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>-->
+            <!--<ul class="collapse list-unstyled" id="homeSubmenu">-->
+            <!--<li><a href="#">Home 1</a></li>-->
+            <!--<li><a href="#">Home 2</a></li>-->
+            <!--<li><a href="#">Home 3</a></li>-->
+            <!--</ul>-->
+            <!--</li>-->
+
+        </ul>
+    </nav>
+
+    <div id="content">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="col-xs-9 col-sm-10 col-md-10 col-lg-10">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-danger navbar-btn n-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Sidebar</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
+
+                        <div class="navbar-header btn2">
+                            <a href="messeges.html">
+                                <button type="button" id="sidebarCollapse" class="btn btn-danger navbar-btn btn2 n-btn">
+                                    <i class="glyphicon glyphicon-inbox"></i>
+                                    <!--<span><a href="index.html">DM</a></span>-->
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!--<div class="collapse navbar-collapse" id="btn btn-info navbar-btn">-->
+                <!--<ul class="glyphicon nav navbar-nav navbar-right">-->
+                <!--<li><a href="#">DM</a></li>-->
+                <!--</ul>-->
+                <!--</div>-->
+            </div>
+        </nav>
+
+
+        <div id="chart-container"></div>
+
+
+    </div>
+</div>
+
+<div class="overlay"></div>
+
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap Js CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
+
+        $('#dismiss, .overlay').on('click', function () {
+            $('#sidebar').removeClass('active');
+            $('.overlay').fadeOut();
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').addClass('active');
+            $('.overlay').fadeIn();
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+    });
+</script>
+</body>
+</html>
