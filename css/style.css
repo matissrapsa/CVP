@@ -209,17 +209,19 @@ a.article, a.article:hover {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.name{
+.name{border-radius: 20px;
     background-color: #b71c1c;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
+
+    border: 2px solid black;
+    /*border-bottom: 2px solid black;*/
+    /*border-top: 2px solid black;*/
 }
 
 .name>h1{
     color: black;
     text-align: center;
     padding-bottom: 8px;
-    text
+
 }
 
 .pad16{
@@ -380,7 +382,7 @@ a.article, a.article:hover {
 .s-btn:active{
     /*background-color: #494949;*/
     border-color: #7f0000;
-    color: ;
+    /*color: ;*/
 }
 
 .yes {
@@ -408,7 +410,7 @@ a.article, a.article:hover {
     color: white;
     text-align: center;
     padding-bottom: 8px;
-    text
+
 }
 
 .seekers{
@@ -437,4 +439,9 @@ a.article, a.article:hover {
 
 .marg5{
     margin: 5px;
+}
+
+.index{
+    border: 1px solid black;
+    border-radius: 20px;
 }
