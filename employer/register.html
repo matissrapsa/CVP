@@ -308,39 +308,21 @@
             <label class="control-label col-sm-3">Gender</label>
             <div class="col-sm-6">
                 <div class="row">
-                    <div class="col-sm-4">
-                        <label class="radio-inline">
-                            <input type="radio" id="femaleRadio" value="Female">Female
-                        </label>
-                    </div>
-                    <div class="col-sm-4">
-                        <label class="radio-inline">
-                            <input type="radio" id="maleRadio" value="Male">Male
-                        </label>
-                    </div>
-                    <div class="col-sm-4">
-                        <label class="radio-inline">
-                            <input type="radio" id="uncknownRadio" value="Unknown">Unknown
-                        </label>
-                    </div>
+                    <form>
+                        <div class="radio col-sm-4">
+                            <label><input type="radio" name="optradio">Female</label>
+                        </div>
+                        <div class="radio  col-sm-4">
+                            <label><input type="radio" name="optradio">Male</label>
+                        </div>
+                        <div class="radio disabled  col-sm-4">
+                            <label><input type="radio" name="optradio" disabled>Unknown</label>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div> <!-- /.form-group -->
-        <div class="form-group">
-            <label class="control-label col-sm-3">Meal Preference</label>
-            <div class="col-sm-9">
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" id="calorieCheckbox" value="Low calorie">Low calorie
-                    </label>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" id="saltCheckbox" value="Low salt">Low salt
-                    </label>
-                </div>
-            </div>
-        </div> <!-- /.form-group -->
+
         <div class="form-group">
             <div class="col-sm-9 col-sm-offset-3">
                 <div class="checkbox">
@@ -357,16 +339,6 @@
         </div>
     </form> <!-- /form -->
 </div> <!-- ./container -->
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- jQuery CDN -->
