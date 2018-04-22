@@ -6,7 +6,12 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: url("../img/body.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*background: #fafafa;*/
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -386,11 +391,13 @@ a.article, a.article:hover {
 }
 
 .yes {
-    float: right;
+    /*float: right;*/
+    border: 2px solid black;
 }
 
 .no{
-    float: left;
+    /*float: left;*/
+    border: 2px solid black;
 }
 
 .glyphicon1{
@@ -415,7 +422,8 @@ a.article, a.article:hover {
 
 .seekers{
     border-radius: 20px;
-    border: 1px solid black;
+    border: 2px solid black;
+    background: #f1f1f1;
 }
 
 .comp{
@@ -444,4 +452,29 @@ a.article, a.article:hover {
 .index{
     border: 1px solid black;
     border-radius: 20px;
+}
+
+.top {
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.table {
+    background: #f1f1f1;
+}
+
+.info {
+    background: #f1f1f1;
+    border-radius: 15px;
+    border: 2px solid black;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bk {
+    background: #f1f1f1;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 10px;
+    padding-bottom: 10px;
 }
